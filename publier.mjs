@@ -20,6 +20,11 @@ const MEDIA_BASE_URL = (process.env.MEDIA_BASE_URL ||
   `https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_REF_NAME || 'main'}/`
 ).replace(/\/?$/, '/');
 
+if (!TEST && !(META_PAGE_TOKEN && META_PAGE_ID && META_IG_ID)) {
+  console.log('Secrets Meta manquants : rien n\'est publié.');
+  process.exit(0);
+}
+
 const planning = JSON.parse(readFileSync('planning.json', 'utf8'));
 const etat = existsSync('etat.json') ? JSON.parse(readFileSync('etat.json', 'utf8')) : {};
 
