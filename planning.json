@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "id": "test-01",
+      "date": "2026-10-08 12:00",
+      "reseaux": ["instagram", "facebook"],
+      "medias": ["media/test-5-signes.jpg"],
+      "legende_fichier": "media/test-5-signes.txt"
+    }
+  ]
+}

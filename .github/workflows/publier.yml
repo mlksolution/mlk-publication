@@ -1,0 +1,37 @@
+name: Publier les posts
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # toutes les 15 minutes
+  workflow_dispatch:          # bouton « Run workflow » pour lancer à la main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publier
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Publier ce qui est dû
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_IG_ID: ${{ secrets.META_IG_ID }}
+        run: node publier.mjs
+      - name: Enregistrer ce qui a été publié
+        run: |
+          if [ -n "$(git status --porcelain etat.json)" ]; then
+            git config user.name "mlk-publication"
+            git config user.email "actions@users.noreply.github.com"
+            git add etat.json
+            git commit -m "Posts publiés"
+            git push
+          fi
