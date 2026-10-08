@@ -3,9 +3,104 @@
     {
       "id": "test-01",
       "date": "2026-10-08 12:00",
-      "reseaux": ["instagram", "facebook"],
-      "medias": ["media/test-5-signes.jpg"],
+      "reseaux": [
+        "instagram",
+        "facebook"
+      ],
+      "medias": [
+        "media/test-5-signes.jpg"
+      ],
       "legende_fichier": "media/test-5-signes.txt"
+    },
+    {
+      "id": "kit-34",
+      "date": "2026-10-08 18:00",
+      "reseaux": [
+        "instagram"
+      ],
+      "medias": [
+        "media/34_jeu-08-oct_18h00.jpg"
+      ],
+      "legende_fichier": "media/34_jeu-08-oct_18h00.txt"
+    },
+    {
+      "id": "kit-35",
+      "date": "2026-10-08 20:30",
+      "reseaux": [
+        "instagram"
+      ],
+      "medias": [
+        "media/35_jeu-08-oct_20h30.jpg"
+      ],
+      "legende_fichier": "media/35_jeu-08-oct_20h30.txt"
+    },
+    {
+      "id": "kit-36",
+      "date": "2026-10-09 10:00",
+      "reseaux": [
+        "instagram",
+        "facebook"
+      ],
+      "medias": [
+        "media/36_ven-09-oct_10h00.jpg"
+      ],
+      "legende_fichier": "media/36_ven-09-oct_10h00.txt"
+    },
+    {
+      "id": "kit-37",
+      "date": "2026-10-09 12:30",
+      "reseaux": [
+        "instagram"
+      ],
+      "medias": [
+        "media/37_ven-09-oct_12h30.jpg"
+      ],
+      "legende_fichier": "media/37_ven-09-oct_12h30.txt"
+    },
+    {
+      "id": "kit-38",
+      "date": "2026-10-09 18:00",
+      "reseaux": [
+        "instagram"
+      ],
+      "medias": [
+        "media/38_ven-09-oct_18h00.jpg"
+      ],
+      "legende_fichier": "media/38_ven-09-oct_18h00.txt"
+    },
+    {
+      "id": "kit-39",
+      "date": "2026-10-09 20:30",
+      "reseaux": [
+        "instagram"
+      ],
+      "medias": [
+        "media/39_ven-09-oct_20h30.jpg"
+      ],
+      "legende_fichier": "media/39_ven-09-oct_20h30.txt"
+    },
+    {
+      "id": "kit-40",
+      "date": "2026-10-10 10:00",
+      "reseaux": [
+        "instagram",
+        "facebook"
+      ],
+      "medias": [
+        "media/40_sam-10-oct_10h00.jpg"
+      ],
+      "legende_fichier": "media/40_sam-10-oct_10h00.txt"
+    },
+    {
+      "id": "kit-42",
+      "date": "2026-10-10 18:00",
+      "reseaux": [
+        "instagram"
+      ],
+      "medias": [
+        "media/42_sam-10-oct_18h00.jpg"
+      ],
+      "legende_fichier": "media/42_sam-10-oct_18h00.txt"
     }
   ]
 }
