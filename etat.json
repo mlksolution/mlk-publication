@@ -66,5 +66,11 @@
       "essais": 3,
       "erreur": "Any of the pages_read_engagement, pages_manage_metadata,\n        pages_read_user_content, pages_manage_ads, pages_show_list or\n        pages_messaging permission(s) must be granted before impersonating a\n        user's page. (code 190)"
     }
+  },
+  "kit-42": {
+    "instagram": {
+      "essais": 1,
+      "erreur": "Any of the pages_read_engagement, pages_manage_metadata,\n        pages_read_user_content, pages_manage_ads, pages_show_list or\n        pages_messaging permission(s) must be granted before impersonating a\n        user's page. (code 190)"
+    }
   }
 }
